@@ -11,7 +11,7 @@ proj_dir = os.path.dirname(os.path.abspath(SPECPATH))
 
 # 檢查圖示檔案是否存在
 icon_file = os.path.join(proj_dir, 'app_icon.ico')
-if not os.path.exists(icon_file):
+if not icon_file or not os.path.exists(icon_file):
     print(f"WARNING: Icon file not found: {icon_file}")
     icon_file = None
 
@@ -19,7 +19,7 @@ a = Analysis(
     ['SearchingPro.py'],
     pathex=[proj_dir],
     binaries=[],
-    datas=[('app_icon.ico', '.')] if os.path.exists(icon_file) else [],
+    datas=[('app_icon.ico', '.')] if icon_file else [],
     hiddenimports=[
         'PyQt5.QtCore',
         'PyQt5.QtGui',
