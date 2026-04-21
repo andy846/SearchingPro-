@@ -26,7 +26,7 @@ jobs:
 
       - name: Zip output
         run: |
-          Compress-Archive -Path dist/SearchingPro -DestinationPath dist/SearchingPro-Windows-x64.zip
+          Compress-Archive -Path dist/SearchingPro.exe -DestinationPath dist/SearchingPro-Windows-x64.zip
 
       - name: Upload to v1.0.0 Release
         run: |
