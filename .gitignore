@@ -1,0 +1,47 @@
+# .gitignore for SearchingPro
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+*.egg-info
+
+# Virtual environment
+.venv/
+venv/
+env/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+*.log
+
+# Ruff
+.ruff_cache/
+
+# Distribution / binaries
+*.icns
+*.ico
+SearchingPro.app/
+*.dmg
+
+# Database (runtime data)
+*.db
+*.sqlite
+*.sqlite3
+
+# User settings (may contain personal paths)
+# Uncomment to ignore:
+# settings.json
